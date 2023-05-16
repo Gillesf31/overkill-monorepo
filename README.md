@@ -6,7 +6,44 @@ It is a monorepo with two Angular applications, one for todo management and one 
 
 Without modules and without constructors, I used NGXS for state management.
 
-I used NX types and scopes to organize the code.
+I used NX types and scopes to organize the code. Check `.eslintrc.json` more details.
+
+```json
+"depConstraints": [
+{
+"sourceTag": "type:app",
+"onlyDependOnLibsWithTags": ["type:feature"]
+},
+{
+"sourceTag": "scope:todo-list",
+"onlyDependOnLibsWithTags": ["scope:todo-list", "scope:shared"]
+},
+{
+"sourceTag": "scope:user-management",
+"onlyDependOnLibsWithTags": ["scope:user-management", "scope:shared"]
+},
+{
+"sourceTag": "scope:shared",
+"onlyDependOnLibsWithTags": ["scope:shared"]
+},
+{
+"sourceTag": "type:feature",
+"onlyDependOnLibsWithTags": ["type:feature", "type:data-access", "type:ui", "type:util"]
+},
+{
+"sourceTag": "type:data-access",
+"onlyDependOnLibsWithTags": ["type:data-access", "type:util"]
+},
+{
+"sourceTag": "type:ui",
+"onlyDependOnLibsWithTags": ["type:ui", "type:util"]
+},
+{
+"sourceTag": "type:util",
+"onlyDependOnLibsWithTags": ["type:util"]
+}
+]
+```
 
 Feel free to make any suggestions or improvements.
 
