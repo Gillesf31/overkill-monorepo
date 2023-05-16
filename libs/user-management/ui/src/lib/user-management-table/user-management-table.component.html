@@ -1,0 +1,23 @@
+<div class="overflow-x-auto">
+  <table class="table table-zebra w-full">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Address</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody *ngIf="users">
+    <tr *ngFor="let user of users">
+      <th> {{ user.name }} </th>
+      <th> {{ user.email | lowercase }} </th>
+      <th> {{ user.address.street }}, {{ user.address.suite }} - {{ user.address.city }} {{ user.address.zipcode }}</th>
+      <th>
+        <overkill-monorepo-button (buttonClick)="onDeleteUser(user)" [classes]="'btn btn-primary'"
+                                  [label]="'Delete'"></overkill-monorepo-button>
+      </th>
+    </tr>
+    </tbody>
+  </table>
+</div>

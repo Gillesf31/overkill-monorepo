@@ -1,0 +1,8 @@
+<div class="form-control">
+  <div class="input-group">
+    <input #inputText type="text" [placeholder]="label + '…'" class="input input-bordered" />
+    <button (click)="onClick(inputText.value)" class="btn btn-square btn-accent">
+      {{ label }}
+    </button>
+  </div>
+</div>

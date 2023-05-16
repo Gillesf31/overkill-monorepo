@@ -14,7 +14,24 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@overkill-monorepo/shared/joke/data-access": ["libs/shared/joke/data-access/src/index.ts"],
+      "@overkill-monorepo/shared/joke/feature": ["libs/shared/joke/feature/src/index.ts"],
+      "@overkill-monorepo/shared/joke/ui": ["libs/shared/joke/ui/src/index.ts"],
+      "@overkill-monorepo/shared/ui-components": ["libs/shared/ui-components/src/index.ts"],
+      "@overkill-monorepo/todo-list/homepage/feature": ["libs/todo-list/homepage/feature/src/index.ts"],
+      "@overkill-monorepo/todo-list/homepage/feature-shell": ["libs/todo-list/homepage/feature-shell/src/index.ts"],
+      "@overkill-monorepo/todo-list/todo-list-page/data-access": ["libs/todo-list/todo-list-page/data-access/src/index.ts"],
+      "@overkill-monorepo/todo-list/todo-list-page/feature": ["libs/todo-list/todo-list-page/feature/src/index.ts"],
+      "@overkill-monorepo/todo-list/todo-list-page/feature-shell": ["libs/todo-list/todo-list-page/feature-shell/src/index.ts"],
+      "@overkill-monorepo/todo-list/todo-list-page/ui": ["libs/todo-list/todo-list-page/ui/src/index.ts"],
+      "@overkill-monorepo/todo-list/todo-list-page/util": ["libs/todo-list/todo-list-page/util/src/index.ts"],
+      "@overkill-monorepo/user-management/data-access": ["libs/user-management/data-access/src/index.ts"],
+      "@overkill-monorepo/user-management/feature": ["libs/user-management/feature/src/index.ts"],
+      "@overkill-monorepo/user-management/feature-shell": ["libs/user-management/feature-shell/src/index.ts"],
+      "@overkill-monorepo/user-management/ui": ["libs/user-management/ui/src/index.ts"],
+      "@overkill-monorepo/user-management/util": ["libs/user-management/util/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
