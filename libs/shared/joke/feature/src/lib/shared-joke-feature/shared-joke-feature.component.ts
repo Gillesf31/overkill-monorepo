@@ -13,9 +13,8 @@ import { JokeService } from '@overkill-monorepo/shared/joke/data-access';
   templateUrl: './shared-joke-feature.component.html',
 })
 export class SharedJokeFeatureComponent implements OnInit {
-  private readonly jokeService: JokeService = inject(JokeService);
-
   joke$!: Observable<string>;
+  private readonly jokeService: JokeService = inject(JokeService);
 
   ngOnInit(): void {
     this.joke$ = this.jokeService.getJoke().pipe(

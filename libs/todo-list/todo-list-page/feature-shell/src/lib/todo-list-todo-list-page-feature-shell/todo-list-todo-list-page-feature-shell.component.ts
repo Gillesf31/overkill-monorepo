@@ -17,7 +17,6 @@ export const ROUTES: Routes = [
   selector: 'overkill-monorepo-todo-list-todo-list-page-feature-shell',
   standalone: true,
   imports: [CommonModule, RouterModule],
-  providers: [TodoListPageDataAccessService],
   template: '<router-outlet></router-outlet>',
 })
 export class TodoListTodoListPageFeatureShellComponent {}

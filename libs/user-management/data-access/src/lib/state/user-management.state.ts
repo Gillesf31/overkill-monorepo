@@ -27,7 +27,6 @@ export class UserManagementState {
   @Action(UsersManagementActions.FetchAll)
   fetchAll(ctx: StateContext<UserManagementStateType>): Observable<UserType[]> {
     return this.userManagementService.getUsers().pipe(
-      tap(console.warn),
       tap((users: UserType[]) => {
         const state: UserManagementStateType = ctx.getState();
         ctx.setState({
