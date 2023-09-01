@@ -17,10 +17,13 @@ import { InputGroupComponent } from '@overkill-monorepo/shared/ui-components';
 })
 export class TodoListTodoListPageFeatureComponent implements OnInit {
   @Select(TodoListState.todoItems) todoList$!: Observable<TodoItemType[]>;
+  @Select(TodoListState.user) user!: Observable<TodoItemType[]>;
+
   private readonly store: Store = inject(Store);
 
   ngOnInit(): void {
     this.store.dispatch(new TodoActions.FetchAll());
+    this.user.subscribe(user => console.warn('user', user));
   }
 
   handleDeleteTodoItem(todoItem: TodoItemType): void {

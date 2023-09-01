@@ -1,9 +1,10 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedJokeUiComponent } from '@overkill-monorepo/shared/joke/ui';
-import { map, Observable } from 'rxjs';
+import { Observable } from 'rxjs';
 import { HttpClientModule } from '@angular/common/http';
-import { JokeService } from '@overkill-monorepo/shared/joke/data-access';
+import { JokeActions, JokeService, JokeState } from '@overkill-monorepo/shared/joke/data-access';
+import { Select, Store } from '@ngxs/store';
 
 @Component({
   selector: 'overkill-monorepo-shared-joke-feature',
@@ -13,14 +14,14 @@ import { JokeService } from '@overkill-monorepo/shared/joke/data-access';
   templateUrl: './shared-joke-feature.component.html',
 })
 export class SharedJokeFeatureComponent implements OnInit {
-  joke$!: Observable<string>;
-  private readonly jokeService: JokeService = inject(JokeService);
+  @Select(JokeState.joke) joke$!: Observable<string>;
+
+  private readonly store: Store = inject(Store);
 
   ngOnInit(): void {
-    this.joke$ = this.jokeService.getJoke().pipe(
-      map(joke => {
-        return joke.joke;
-      })
-    );
+    this.joke$.subscribe(() => {
+      console.warn('joke$');
+    });
+    this.store.dispatch(new JokeActions.Fetch());
   }
 }

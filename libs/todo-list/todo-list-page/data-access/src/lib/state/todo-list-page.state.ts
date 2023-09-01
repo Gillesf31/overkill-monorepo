@@ -7,12 +7,14 @@ import { TodoActions } from './todo-list-page.action';
 
 export type TodoListStateType = {
   todoItems: TodoItemType[];
+  user: any;
 };
 
 @State<TodoListStateType>({
   name: 'todoList',
   defaults: {
     todoItems: [],
+    user: { name: 'test' },
   },
 })
 @Injectable()
@@ -22,6 +24,12 @@ export class TodoListState {
   @Selector()
   static todoItems(state: TodoListStateType): TodoItemType[] {
     return state.todoItems;
+  }
+
+  @Selector()
+  static user(state: TodoListStateType): any {
+    console.warn('user selector', state.user);
+    return state.user;
   }
 
   @Action(TodoActions.FetchAll)
