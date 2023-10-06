@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'todo-list-todo-list-page-feature-shell',
+  displayName: 'todo-list-todo-list-page-shell',
   preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../../../coverage/libs/todo-list/todo-list-page/feature-shell',
+  coverageDirectory: '../../../../coverage/libs/todo-list/todo-list-page/shell',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

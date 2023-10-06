@@ -7,6 +7,6 @@ export const ROUTES: Routes = [
   },
   {
     path: 'todo-list',
-    loadChildren: () => import('@overkill-monorepo/todo-list/todo-list-page/feature-shell').then(m => m.ROUTES),
+    loadChildren: () => import('@overkill-monorepo/todo-list/todo-list-page/shell').then(m => m.ROUTES),
   },
 ];

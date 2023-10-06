@@ -24,7 +24,7 @@
               {
                 "sourceTag": "type:app",
                 "onlyDependOnLibsWithTags": [
-                  "type:feature"
+                  "type:routes"
                 ]
               },
               {
@@ -53,20 +53,12 @@
                   "type:feature",
                   "type:ui",
                   "type:util",
-                  "type:state"
+                  "type:data-access"
                 ]
               },
               {
                 "sourceTag": "type:data-access",
                 "onlyDependOnLibsWithTags": [
-                  "type:data-access",
-                  "type:util"
-                ]
-              },
-              {
-                "sourceTag": "type:state",
-                "onlyDependOnLibsWithTags": [
-                  "type:state",
                   "type:data-access",
                   "type:util"
                 ]
@@ -89,7 +81,6 @@
                 "onlyDependOnLibsWithTags": [
                   "type:routes",
                   "type:feature",
-                  "type:state",
                   "type:data-access"
                 ]
               }

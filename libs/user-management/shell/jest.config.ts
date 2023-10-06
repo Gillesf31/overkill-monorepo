@@ -1,10 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'todo-list-homepage-feature-shell',
-  preset: '../../../../jest.preset.js',
+  displayName: 'user-management-shell',
+  preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory:
-    '../../../../coverage/libs/todo-list/homepage/feature-shell',
+  coverageDirectory: '../../../coverage/libs/user-management/shell',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
