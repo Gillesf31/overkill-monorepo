@@ -1,1 +1,1 @@
-export * from './lib/user-management-feature-shell/user-management-feature-shell.component';
+export { ROUTES } from './lib/user-management-feature-shell/user-management-feature-shell.routes';
