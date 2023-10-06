@@ -1,8 +1,9 @@
 import { importProvidersFrom } from '@angular/core';
 import { Routes } from '@angular/router';
 import { NgxsModule } from '@ngxs/store';
-import { TodoListPageDataAccessService, TodoListState } from '@overkill-monorepo/todo-list/todo-list-page/data-access';
+import { TodoListPageDataAccessService } from '@overkill-monorepo/todo-list/todo-list-page/data-access';
 import { HttpClientModule } from '@angular/common/http';
+import { TodoListState } from '@overkill-monorepo/todo-list/state';
 
 export const ROUTES: Routes = [
   {

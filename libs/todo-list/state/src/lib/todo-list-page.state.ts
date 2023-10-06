@@ -2,8 +2,8 @@ import { inject, Injectable } from '@angular/core';
 import { Action, Selector, State, StateContext } from '@ngxs/store';
 import { TodoItemType } from '@overkill-monorepo/todo-list/todo-list-page/util';
 import { Observable, tap, throwError } from 'rxjs';
-import { TodoListPageDataAccessService } from '../todo-list-page-data-access.service';
 import { TodoActions } from './todo-list-page.action';
+import { TodoListPageDataAccessService } from '@overkill-monorepo/todo-list/todo-list-page/data-access';
 
 export type TodoListStateType = {
   todoItems: TodoItemType[];

@@ -2,8 +2,8 @@ import { inject, Injectable } from '@angular/core';
 import { Action, Selector, State, StateContext } from '@ngxs/store';
 import { Observable, tap, throwError } from 'rxjs';
 import { UserType } from '@overkill-monorepo/user-management/util';
-import { UserManagementService } from '../user-management.service';
 import { UsersManagementActions } from './user-management.action';
+import { UserManagementService } from '@overkill-monorepo/user-management/data-access';
 
 export type UserManagementStateType = {
   users: UserType[];

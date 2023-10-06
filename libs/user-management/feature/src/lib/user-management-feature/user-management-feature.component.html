@@ -1,4 +1,5 @@
 <overkill-monorepo-shared-joke-feature/>
 <div class="mt-5">
-  <overkill-monorepo-user-management-table (deleteUser)="handleDeleteUser($event)" [users]="users$ | async"/>
+  <overkill-monorepo-user-management-table (deleteUser)="handleDeleteUser($event)"
+                                           [users]="userManagementFacade.users$ | async"/>
 </div>
