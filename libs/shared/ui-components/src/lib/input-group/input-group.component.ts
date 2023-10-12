@@ -8,11 +8,11 @@ import { CommonModule } from '@angular/common';
   templateUrl: './input-group.component.html',
 })
 export class InputGroupComponent {
-  @Input({ required: true }) label!: string;
+  @Input({ required: true }) public label!: string;
 
-  @Output() buttonClickHandler = new EventEmitter<string>();
+  @Output() public buttonClickHandler = new EventEmitter<string>();
 
-  onClick(inputText: string): void {
+  public onClick(inputText: string): void {
     this.buttonClickHandler.emit(inputText);
   }
 }

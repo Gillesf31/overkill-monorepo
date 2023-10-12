@@ -8,5 +8,5 @@ import { CommonModule } from '@angular/common';
   templateUrl: './shared-joke-ui.component.html',
 })
 export class SharedJokeUiComponent {
-  @Input({ required: true }) joke!: string;
+  @Input({ required: true }) public joke!: string;
 }

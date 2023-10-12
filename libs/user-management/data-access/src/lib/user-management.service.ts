@@ -5,14 +5,14 @@ import { UserType } from '@overkill-monorepo/user-management/util';
 
 @Injectable()
 export class UserManagementService {
-  private readonly httpClient: HttpClient = inject(HttpClient);
-  private readonly apiUrl = 'http://localhost:3000/users';
+  readonly #httpClient: HttpClient = inject(HttpClient);
+  readonly #apiUrl = 'http://localhost:3000/users';
 
-  getUsers(): Observable<UserType[]> {
-    return this.httpClient.get<UserType[]>(this.apiUrl);
+  public getUsers(): Observable<UserType[]> {
+    return this.#httpClient.get<UserType[]>(this.#apiUrl);
   }
 
-  deleteUser(id: number): Observable<void> {
-    return this.httpClient.delete<void>(`${this.apiUrl}/${id}`);
+  public deleteUser(id: number): Observable<void> {
+    return this.#httpClient.delete<void>(`${this.#apiUrl}/${id}`);
   }
 }

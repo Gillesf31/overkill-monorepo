@@ -7,15 +7,15 @@ import { UserType } from '@overkill-monorepo/user-management/util';
 
 @Injectable()
 export class UserManagementFacade {
-  @Select(UserManagementState.users) users$!: Observable<UserType[]>;
+  @Select(UserManagementState.users) public users$!: Observable<UserType[]>;
 
-  private readonly store: Store = inject(Store);
+  readonly #store: Store = inject(Store);
 
-  fetchAll(): void {
-    this.store.dispatch(new UsersManagementActions.FetchAll());
+  public fetchAll(): void {
+    this.#store.dispatch(new UsersManagementActions.FetchAll());
   }
 
-  delete(id: number): void {
-    this.store.dispatch(new UsersManagementActions.Delete(id));
+  public delete(id: number): void {
+    this.#store.dispatch(new UsersManagementActions.Delete(id));
   }
 }

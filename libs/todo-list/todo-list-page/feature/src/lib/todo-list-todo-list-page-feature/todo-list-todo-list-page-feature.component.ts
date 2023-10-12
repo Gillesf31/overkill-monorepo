@@ -1,12 +1,11 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Observable } from 'rxjs';
 import { HttpClientModule } from '@angular/common/http';
 import { TodoItemType } from '@overkill-monorepo/todo-list/todo-list-page/util';
 import { TodoItemComponent } from '@overkill-monorepo/todo-list/todo-list-page/ui';
-import { Select, Store } from '@ngxs/store';
+import { Store } from '@ngxs/store';
 import { InputGroupComponent } from '@overkill-monorepo/shared/ui-components';
-import { TodoActions, TodoListState } from '@overkill-monorepo/todo-list/state';
+import { TodoListFacade } from '@overkill-monorepo/todo-list/state';
 
 @Component({
   selector: 'overkill-monorepo-todo-list-todo-list-page-feature',
@@ -16,22 +15,21 @@ import { TodoActions, TodoListState } from '@overkill-monorepo/todo-list/state';
   templateUrl: './todo-list-todo-list-page-feature.component.html',
 })
 export class TodoListTodoListPageFeatureComponent implements OnInit {
-  @Select(TodoListState.todoItems) todoList$!: Observable<TodoItemType[]>;
-  private readonly store: Store = inject(Store);
+  public readonly todoListFacade: TodoListFacade = inject(TodoListFacade);
 
-  ngOnInit(): void {
-    this.store.dispatch(new TodoActions.FetchAll());
+  public ngOnInit(): void {
+    this.todoListFacade.fetchAll();
   }
 
-  handleDeleteTodoItem(todoItem: TodoItemType): void {
-    this.store.dispatch(new TodoActions.Delete(todoItem.id));
+  public handleDeleteTodoItem(todoItem: TodoItemType): void {
+    this.todoListFacade.delete(todoItem.id);
   }
 
-  handleAddTodoItem(inputText: string): void {
-    this.store.dispatch(new TodoActions.Add(inputText));
+  public handleAddTodoItem(inputText: string): void {
+    this.todoListFacade.add(inputText);
   }
 
-  handleCheckTodoItem(todoItem: TodoItemType): void {
-    this.store.dispatch(new TodoActions.Update(todoItem));
+  public handleCheckTodoItem(todoItem: TodoItemType): void {
+    this.todoListFacade.update(todoItem);
   }
 }

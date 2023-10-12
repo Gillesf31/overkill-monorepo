@@ -8,10 +8,10 @@ import { CommonModule } from '@angular/common';
   templateUrl: './button.component.html',
 })
 export class ButtonComponent {
-  @Input({ required: true }) label!: string;
-  @Input({ required: false }) classes!: string;
+  @Input({ required: true }) public label!: string;
+  @Input({ required: false }) public classes!: string;
 
-  @Output() buttonClick = new EventEmitter<void>();
+  @Output() public buttonClick = new EventEmitter<void>();
 
   onClick(): void {
     this.buttonClick.emit();

@@ -17,16 +17,16 @@ export type TodoListStateType = {
 })
 @Injectable()
 export class TodoListState {
-  private readonly todoListService: TodoListPageDataAccessService = inject(TodoListPageDataAccessService);
+  readonly #todoListService: TodoListPageDataAccessService = inject(TodoListPageDataAccessService);
 
   @Selector()
-  static todoItems(state: TodoListStateType): TodoItemType[] {
+  public static todoItems(state: TodoListStateType): TodoItemType[] {
     return state.todoItems;
   }
 
   @Action(TodoActions.FetchAll)
-  fetchAll(ctx: StateContext<TodoListStateType>): Observable<TodoItemType[]> {
-    return this.todoListService.getTodos().pipe(
+  public fetchAll(ctx: StateContext<TodoListStateType>): Observable<TodoItemType[]> {
+    return this.#todoListService.getTodos().pipe(
       tap((todoItems: TodoItemType[]) => {
         const state: TodoListStateType = ctx.getState();
         ctx.setState({
@@ -38,7 +38,7 @@ export class TodoListState {
   }
 
   @Action(TodoActions.Delete)
-  delete(ctx: StateContext<TodoListStateType>, action: TodoActions.Delete): Observable<void> {
+  public delete(ctx: StateContext<TodoListStateType>, action: TodoActions.Delete): Observable<void> {
     const state: TodoListStateType = ctx.getState();
 
     const foundItem: TodoItemType | undefined = state.todoItems.find((item: TodoItemType) => item.id === action.id);
@@ -47,7 +47,7 @@ export class TodoListState {
       return throwError(() => 'Item not found');
     }
 
-    return this.todoListService.deleteTodoItem(foundItem.id).pipe(
+    return this.#todoListService.deleteTodoItem(foundItem.id).pipe(
       tap(() => {
         const index: number = state.todoItems.indexOf(foundItem);
         const newTodoItems: TodoItemType[] = state.todoItems.slice(0, index).concat(state.todoItems.slice(index + 1));
@@ -61,7 +61,7 @@ export class TodoListState {
   }
 
   @Action(TodoActions.Add)
-  add(ctx: StateContext<TodoListStateType>, action: TodoActions.Add): Observable<TodoItemType> {
+  public add(ctx: StateContext<TodoListStateType>, action: TodoActions.Add): Observable<TodoItemType> {
     const state: TodoListStateType = ctx.getState();
 
     const newTodoItem: TodoItemType = {
@@ -70,7 +70,7 @@ export class TodoListState {
       completed: false,
     };
 
-    return this.todoListService.addTodoItem(newTodoItem).pipe(
+    return this.#todoListService.addTodoItem(newTodoItem).pipe(
       tap((todoItem: TodoItemType) => {
         ctx.patchState({
           ...state,
@@ -81,7 +81,7 @@ export class TodoListState {
   }
 
   @Action(TodoActions.Update)
-  update(ctx: StateContext<TodoListStateType>, action: TodoActions.Update): Observable<TodoItemType> {
+  public update(ctx: StateContext<TodoListStateType>, action: TodoActions.Update): Observable<TodoItemType> {
     const state: TodoListStateType = ctx.getState();
 
     const foundItem: TodoItemType | undefined = state.todoItems.find((item: TodoItemType) => item.id === action.payload.id);
@@ -90,7 +90,7 @@ export class TodoListState {
       return throwError(() => 'Item not found');
     }
 
-    return this.todoListService.updateTodoItem(action.payload).pipe(
+    return this.#todoListService.updateTodoItem(action.payload).pipe(
       tap((todoItem: TodoItemType) => {
         const index: number = state.todoItems.indexOf(foundItem);
         const newTodoItems: TodoItemType[] = state.todoItems

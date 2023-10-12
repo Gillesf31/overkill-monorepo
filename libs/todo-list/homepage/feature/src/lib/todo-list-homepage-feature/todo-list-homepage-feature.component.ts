@@ -11,9 +11,9 @@ import { SharedJokeFeatureComponent } from '@overkill-monorepo/shared/joke/featu
   templateUrl: './todo-list-homepage-feature.component.html',
 })
 export class TodoListHomepageFeatureComponent {
-  router: Router = inject(Router);
+  #router: Router = inject(Router);
 
   onGoTodoList(): void {
-    this.router.navigateByUrl('/todo-list');
+    this.#router.navigateByUrl('/todo-list');
   }
 }

@@ -10,16 +10,16 @@ import { ButtonComponent } from '@overkill-monorepo/shared/ui-components';
   templateUrl: './todo-item.component.html',
 })
 export class TodoItemComponent {
-  @Input({ required: true }) todoItem!: TodoItemType;
+  @Input({ required: true }) public todoItem!: TodoItemType;
 
-  @Output() deleteTodoItem = new EventEmitter<TodoItemType>();
-  @Output() checkTodoItem = new EventEmitter<TodoItemType>();
+  @Output() public deleteTodoItem = new EventEmitter<TodoItemType>();
+  @Output() public checkTodoItem = new EventEmitter<TodoItemType>();
 
-  buttonClickHandler(todoItem: TodoItemType): void {
+  public buttonClickHandler(todoItem: TodoItemType): void {
     this.deleteTodoItem.emit(todoItem);
   }
 
-  checkButtonClickHandler(todoItem: TodoItemType, checked: boolean): void {
+  public checkButtonClickHandler(todoItem: TodoItemType, checked: boolean): void {
     this.checkTodoItem.emit({ ...todoItem, completed: checked });
   }
 }

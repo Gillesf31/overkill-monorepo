@@ -10,10 +10,10 @@ import { ButtonComponent } from '@overkill-monorepo/shared/ui-components';
   templateUrl: './user-management-table.component.html',
 })
 export class UserManagementTableComponent {
-  @Input({ required: true }) users: UserType[] | null = null;
-  @Output() deleteUser = new EventEmitter<UserType>();
+  @Input({ required: true }) public users: UserType[] | null = null;
+  @Output() public deleteUser = new EventEmitter<UserType>();
 
-  onDeleteUser(user: UserType): void {
+  public onDeleteUser(user: UserType): void {
     this.deleteUser.emit(user);
   }
 }

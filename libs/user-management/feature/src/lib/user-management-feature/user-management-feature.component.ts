@@ -17,11 +17,11 @@ import { UserManagementFacade } from '@overkill-monorepo/user-management/state';
 export class UserManagementFeatureComponent implements OnInit {
   public readonly userManagementFacade = inject(UserManagementFacade);
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     this.userManagementFacade.fetchAll();
   }
 
-  handleDeleteUser(user: UserType): void {
+  public handleDeleteUser(user: UserType): void {
     this.userManagementFacade.delete(user.id);
   }
 }

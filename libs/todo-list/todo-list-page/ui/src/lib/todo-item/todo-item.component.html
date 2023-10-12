@@ -1,9 +1,11 @@
 <div class="form-control">
-  <label class="label cursor-pointer">
-    <span class="label-text text-base" [class]="todoItem.completed ? 'line-through': ''">{{ todoItem.title }}</span>
-    <div class="">
-      <input type="checkbox" (change)="checkButtonClickHandler(todoItem, !todoItem.completed)" [checked]="todoItem.completed" class="checkbox checkbox-primary mr-5 align-middle" />
-      <overkill-monorepo-button (buttonClick)="buttonClickHandler(todoItem)" label="Delete"></overkill-monorepo-button>
-    </div>
-  </label>
+    <label class="label cursor-pointer">
+        <span [class]="todoItem.completed ? 'line-through': ''" class="label-text text-base">{{ todoItem.title }}</span>
+        <div>
+            <input (change)="checkButtonClickHandler(todoItem, !todoItem.completed)" [checked]="todoItem.completed"
+                   class="checkbox checkbox-primary mr-5 align-middle" type="checkbox"/>
+            <overkill-monorepo-button (buttonClick)="buttonClickHandler(todoItem)"
+                                      label="Delete"></overkill-monorepo-button>
+        </div>
+    </label>
 </div>
