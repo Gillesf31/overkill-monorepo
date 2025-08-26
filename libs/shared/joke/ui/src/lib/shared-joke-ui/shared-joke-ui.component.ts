@@ -1,12 +1,13 @@
-import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 
 @Component({
   selector: 'overkill-monorepo-shared-joke-ui',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './shared-joke-ui.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SharedJokeUiComponent {
-  @Input({ required: true }) public joke!: string;
+  public joke = input.required<string>();
 }

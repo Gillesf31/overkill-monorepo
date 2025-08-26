@@ -1,16 +1,17 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component, input, output } from '@angular/core';
 
 @Component({
   selector: 'overkill-monorepo-input-group',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './input-group.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class InputGroupComponent {
-  @Input({ required: true }) public label!: string;
+  public label = input.required<string>();
 
-  @Output() public buttonClickHandler = new EventEmitter<string>();
+  public buttonClickHandler = output<string>();
 
   public onClick(inputText: string): void {
     this.buttonClickHandler.emit(inputText);

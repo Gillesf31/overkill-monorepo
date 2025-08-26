@@ -1,19 +1,20 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component, input, output } from '@angular/core';
 
 @Component({
   selector: 'overkill-monorepo-button',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './button.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ButtonComponent {
-  @Input({ required: true }) public label!: string;
-  @Input({ required: false }) public classes!: string;
+  public label = input.required<string>();
+  public classes = input<string>();
 
-  @Output() public buttonClick = new EventEmitter<void>();
+  public buttonClick = output<void>();
 
-  onClick(): void {
+  public onClick(): void {
     this.buttonClick.emit();
   }
 }
