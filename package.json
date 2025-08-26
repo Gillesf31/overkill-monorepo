@@ -5,7 +5,7 @@
   "scripts": {
     "preinstall": "npx -y only-allow pnpm",
     "start:todo": "json-server --watch ./apps/back-end-todo-list/db.json & npx nx run todo-list:serve",
-    "start:usermanagement": "json-server --watch ./apps/backend-user-management/db.json & npx nx run user-management:serve",
+    "start:usermanagement": "json-server --watch ./apps/backend-user-management/db.json --port 3001 & npx nx run user-management:serve",
     "graph": "npx nx graph --watch",
     "affected:graph": "npx nx affected:graph --base=origin/master --head=HEAD"
   },
