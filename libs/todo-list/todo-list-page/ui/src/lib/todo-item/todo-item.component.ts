@@ -1,19 +1,20 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TodoItemType } from '@overkill-monorepo/todo-list/todo-list-page/util';
+import { ChangeDetectionStrategy, Component, input, output } from '@angular/core';
 import { ButtonComponent } from '@overkill-monorepo/shared/ui-components';
+import { TodoItemType } from '@overkill-monorepo/todo-list/todo-list-page/util';
 
 @Component({
   selector: 'overkill-monorepo-todo-item',
   standalone: true,
   imports: [CommonModule, ButtonComponent],
   templateUrl: './todo-item.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TodoItemComponent {
-  @Input({ required: true }) public todoItem!: TodoItemType;
+  public todoItem = input.required<TodoItemType>();
 
-  @Output() public deleteTodoItem = new EventEmitter<TodoItemType>();
-  @Output() public checkTodoItem = new EventEmitter<TodoItemType>();
+  public deleteTodoItem = output<TodoItemType>();
+  public checkTodoItem = output<TodoItemType>();
 
   public buttonClickHandler(todoItem: TodoItemType): void {
     this.deleteTodoItem.emit(todoItem);

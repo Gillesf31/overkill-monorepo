@@ -22,6 +22,167 @@
         "catchPhrase": "Centralized empowering task-force",
         "bs": "target end-to-end models"
       }
+    },
+    {
+      "id": 11,
+      "name": "Marcus Rodriguez",
+      "username": "marcus.rod",
+      "email": "marcus.rodriguez@techcorp.com",
+      "address": {
+        "street": "Oak Street",
+        "suite": "Apt 42",
+        "city": "San Francisco",
+        "zipcode": "94102",
+        "geo": {
+          "lat": "37.7749",
+          "lng": "-122.4194"
+        }
+      },
+      "phone": "415-555-0123",
+      "website": "marcustech.dev",
+      "company": {
+        "name": "TechCorp Solutions",
+        "catchPhrase": "Innovation through collaboration",
+        "bs": "streamline digital experiences"
+      }
+    },
+    {
+      "id": 14,
+      "name": "Emily Davis",
+      "username": "emily.davis",
+      "email": "e.davis@marketing-pro.com",
+      "address": {
+        "street": "Market Street",
+        "suite": "Suite 800",
+        "city": "Chicago",
+        "zipcode": "60601",
+        "geo": {
+          "lat": "41.8781",
+          "lng": "-87.6298"
+        }
+      },
+      "phone": "312-555-0789",
+      "website": "emilydavis.marketing",
+      "company": {
+        "name": "Marketing Pro Agency",
+        "catchPhrase": "Connecting brands with audiences",
+        "bs": "optimize engagement strategies"
+      }
+    },
+    {
+      "id": 15,
+      "name": "James Wilson",
+      "username": "jwilson",
+      "email": "james.wilson@cloudtech.net",
+      "address": {
+        "street": "Cloud Avenue",
+        "suite": "Tower 3",
+        "city": "Seattle",
+        "zipcode": "98101",
+        "geo": {
+          "lat": "47.6062",
+          "lng": "-122.3321"
+        }
+      },
+      "phone": "206-555-0321",
+      "website": "jameswilson.cloud",
+      "company": {
+        "name": "CloudTech Systems",
+        "catchPhrase": "Scalable cloud solutions",
+        "bs": "modernize infrastructure platforms"
+      }
+    },
+    {
+      "id": 16,
+      "name": "Lisa Thompson",
+      "username": "lisa_t",
+      "email": "lisa.thompson@dataanalytics.org",
+      "address": {
+        "street": "Data Boulevard",
+        "suite": "Level 12",
+        "city": "Boston",
+        "zipcode": "02101",
+        "geo": {
+          "lat": "42.3601",
+          "lng": "-71.0589"
+        }
+      },
+      "phone": "617-555-0654",
+      "website": "lisathompson.data",
+      "company": {
+        "name": "Data Analytics Corp",
+        "catchPhrase": "Insights drive decisions",
+        "bs": "transform data into intelligence"
+      }
+    },
+    {
+      "id": 17,
+      "name": "Michael Brown",
+      "username": "mike_brown",
+      "email": "m.brown@security-first.com",
+      "address": {
+        "street": "Security Plaza",
+        "suite": "Room 401",
+        "city": "Denver",
+        "zipcode": "80201",
+        "geo": {
+          "lat": "39.7392",
+          "lng": "-104.9903"
+        }
+      },
+      "phone": "303-555-0147",
+      "website": "michaelbrown.security",
+      "company": {
+        "name": "Security First Solutions",
+        "catchPhrase": "Protection through innovation",
+        "bs": "secure digital environments"
+      }
+    },
+    {
+      "id": 18,
+      "name": "Amanda Martinez",
+      "username": "amanda.m",
+      "email": "amanda.martinez@fintech-hub.com",
+      "address": {
+        "street": "Financial District",
+        "suite": "Floor 25",
+        "city": "Miami",
+        "zipcode": "33101",
+        "geo": {
+          "lat": "25.7617",
+          "lng": "-80.1918"
+        }
+      },
+      "phone": "305-555-0852",
+      "website": "amandamartinez.fintech",
+      "company": {
+        "name": "FinTech Hub",
+        "catchPhrase": "Financial technology redefined",
+        "bs": "innovate payment solutions"
+      }
+    },
+    {
+      "id": 19,
+      "name": "Robert Taylor",
+      "username": "rob_taylor",
+      "email": "robert.taylor@edutech-solutions.edu",
+      "address": {
+        "street": "Education Lane",
+        "suite": "Campus A",
+        "city": "Portland",
+        "zipcode": "97201",
+        "geo": {
+          "lat": "45.5152",
+          "lng": "-122.6784"
+        }
+      },
+      "phone": "503-555-0963",
+      "website": "roberttaylor.edu",
+      "company": {
+        "name": "EduTech Solutions",
+        "catchPhrase": "Learning without boundaries",
+        "bs": "digitize educational experiences"
+      }
     }
   ]
 }

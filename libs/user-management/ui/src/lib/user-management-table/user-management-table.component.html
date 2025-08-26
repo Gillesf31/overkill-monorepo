@@ -8,8 +8,10 @@
       <th>Action</th>
     </tr>
     </thead>
-    <tbody *ngIf="users">
-    <tr *ngFor="let user of users">
+    @if (users()) {
+      <tbody>
+      @for (user of users(); track user.id) {
+        <tr>
       <th> {{ user.name }} </th>
       <th> {{ user.email | lowercase }} </th>
       <th> {{ user.address.street }}, {{ user.address.suite }} - {{ user.address.city }} {{ user.address.zipcode }}</th>
@@ -17,7 +19,9 @@
         <overkill-monorepo-button (buttonClick)="onDeleteUser(user)" [classes]="'btn btn-primary'"
                                   [label]="'Delete'"></overkill-monorepo-button>
       </th>
-    </tr>
-    </tbody>
+        </tr>
+      }
+      </tbody>
+    }
   </table>
 </div>

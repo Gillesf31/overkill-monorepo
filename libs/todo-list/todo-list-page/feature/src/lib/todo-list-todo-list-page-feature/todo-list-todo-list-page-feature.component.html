@@ -1,10 +1,11 @@
 <div class="flex flex-col items-center">
   <h1 class="text-4xl text-center">To do list</h1>
-  <div *ngFor="let todoItem of (todoListFacade.todoList$ | async)"
-       class=" border-b border-1 last:border-none min-w-[30%]">
-    <overkill-monorepo-todo-item (checkTodoItem)="handleCheckTodoItem($event)"
-                                 (deleteTodoItem)="handleDeleteTodoItem(todoItem)" [todoItem]="todoItem"/>
-  </div>
+  @for (todoItem of todoList(); track todoItem.id) {
+    <div class="border-b border-1 last:border-none min-w-[30%]">
+      <overkill-monorepo-todo-item (checkTodoItem)="handleCheckTodoItem($event)"
+                                   (deleteTodoItem)="handleDeleteTodoItem(todoItem)" [todoItem]="todoItem"/>
+    </div>
+  }
   <div class="mt-5">
     <overkill-monorepo-input-group (buttonClickHandler)="handleAddTodoItem($event)" label="Add"/>
   </div>
