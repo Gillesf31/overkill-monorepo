@@ -6,7 +6,6 @@ import { ButtonComponent } from '@overkill-monorepo/shared/ui-components';
 
 @Component({
   selector: 'overkill-monorepo-todo-list-homepage-feature',
-  standalone: true,
   imports: [CommonModule, ButtonComponent, SharedJokeFeatureComponent],
   templateUrl: './todo-list-homepage-feature.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

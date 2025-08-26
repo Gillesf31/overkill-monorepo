@@ -5,7 +5,6 @@ import { UserType } from '@overkill-monorepo/user-management/util';
 
 @Component({
   selector: 'overkill-monorepo-user-management-table',
-  standalone: true,
   imports: [CommonModule, ButtonComponent],
   templateUrl: './user-management-table.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

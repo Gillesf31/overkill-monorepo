@@ -7,7 +7,6 @@ import { map } from 'rxjs';
 
 @Component({
   selector: 'overkill-monorepo-shared-joke-feature',
-  standalone: true,
   providers: [JokeService],
   imports: [CommonModule, SharedJokeUiComponent],
   templateUrl: './shared-joke-feature.component.html',

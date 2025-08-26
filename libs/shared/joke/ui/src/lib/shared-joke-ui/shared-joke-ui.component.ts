@@ -3,7 +3,6 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 
 @Component({
   selector: 'overkill-monorepo-shared-joke-ui',
-  standalone: true,
   imports: [CommonModule],
   templateUrl: './shared-joke-ui.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

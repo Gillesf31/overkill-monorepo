@@ -9,7 +9,6 @@ import { UserType } from '@overkill-monorepo/user-management/util';
 
 @Component({
   selector: 'overkill-monorepo-user-management-feature',
-  standalone: true,
   imports: [CommonModule, UserManagementTableComponent, SharedJokeFeatureComponent],
   providers: [Store],
   templateUrl: './user-management-feature.component.html',

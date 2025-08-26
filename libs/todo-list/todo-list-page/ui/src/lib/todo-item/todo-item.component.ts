@@ -5,7 +5,6 @@ import { TodoItemType } from '@overkill-monorepo/todo-list/todo-list-page/util';
 
 @Component({
   selector: 'overkill-monorepo-todo-item',
-  standalone: true,
   imports: [CommonModule, ButtonComponent],
   templateUrl: './todo-item.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

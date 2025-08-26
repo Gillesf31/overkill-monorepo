@@ -3,7 +3,6 @@ import { ChangeDetectionStrategy, Component, input, output } from '@angular/core
 
 @Component({
   selector: 'overkill-monorepo-button',
-  standalone: true,
   imports: [CommonModule],
   templateUrl: './button.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

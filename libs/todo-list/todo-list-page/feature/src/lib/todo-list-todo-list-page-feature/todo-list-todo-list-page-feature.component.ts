@@ -9,7 +9,6 @@ import { TodoItemType } from '@overkill-monorepo/todo-list/todo-list-page/util';
 
 @Component({
   selector: 'overkill-monorepo-todo-list-todo-list-page-feature',
-  standalone: true,
   imports: [CommonModule, TodoItemComponent, InputGroupComponent],
   providers: [Store],
   templateUrl: './todo-list-todo-list-page-feature.component.html',

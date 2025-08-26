@@ -3,7 +3,6 @@ import { ChangeDetectionStrategy, Component, input, output } from '@angular/core
 
 @Component({
   selector: 'overkill-monorepo-input-group',
-  standalone: true,
   imports: [CommonModule],
   templateUrl: './input-group.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
