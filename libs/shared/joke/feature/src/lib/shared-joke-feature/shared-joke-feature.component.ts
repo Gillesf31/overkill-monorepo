@@ -1,8 +1,9 @@
-import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedJokeUiComponent } from '@overkill-monorepo/shared/joke/ui';
-import { map, Observable } from 'rxjs';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { JokeService } from '@overkill-monorepo/shared/joke/data-access';
+import { SharedJokeUiComponent } from '@overkill-monorepo/shared/joke/ui';
+import { map } from 'rxjs';
 
 @Component({
   selector: 'overkill-monorepo-shared-joke-feature',
@@ -10,16 +11,12 @@ import { JokeService } from '@overkill-monorepo/shared/joke/data-access';
   providers: [JokeService],
   imports: [CommonModule, SharedJokeUiComponent],
   templateUrl: './shared-joke-feature.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SharedJokeFeatureComponent implements OnInit {
-  public joke$!: Observable<string>;
-  readonly #jokeService: JokeService = inject(JokeService);
-
-  public ngOnInit(): void {
-    this.joke$ = this.#jokeService.getJoke().pipe(
-      map(joke => {
-        return joke.joke;
-      })
-    );
-  }
+export class SharedJokeFeatureComponent {
+  public joke = toSignal(
+    inject(JokeService)
+      .getJoke()
+      .pipe(map(({ joke }) => joke))
+  );
 }
