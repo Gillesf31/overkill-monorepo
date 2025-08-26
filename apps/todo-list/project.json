@@ -4,22 +4,31 @@
   "projectType": "application",
   "prefix": "overkill-monorepo",
   "sourceRoot": "apps/todo-list/src",
-  "tags": ["type:app", "scope:todo-list"],
+  "tags": [
+    "type:app",
+    "scope:todo-list"
+  ],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/todo-list",
         "index": "apps/todo-list/src/index.html",
         "main": "apps/todo-list/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [
+          "zone.js"
+        ],
         "tsConfig": "apps/todo-list/tsconfig.app.json",
         "assets": [
           "apps/todo-list/src/favicon.ico",
           "apps/todo-list/src/assets"
         ],
-        "styles": ["apps/todo-list/src/styles.css"],
+        "styles": [
+          "apps/todo-list/src/styles.css"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -53,10 +62,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "todo-list:build:production"
+          "buildTarget": "todo-list:build:production"
         },
         "development": {
-          "browserTarget": "todo-list:build:development"
+          "buildTarget": "todo-list:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -69,7 +78,9 @@
     },
     "lint": {
       "executor": "@nx/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
         "lintFilePatterns": [
           "apps/todo-list/**/*.ts",
@@ -79,7 +90,9 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
       "options": {
         "jestConfig": "apps/todo-list/jest.config.ts",
         "passWithNoTests": true

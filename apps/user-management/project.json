@@ -4,19 +4,31 @@
   "projectType": "application",
   "prefix": "overkill-monorepo",
   "sourceRoot": "apps/user-management/src",
-  "tags": ["scope:user-management", "type:app"],
+  "tags": [
+    "scope:user-management",
+    "type:app"
+  ],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/user-management",
         "index": "apps/user-management/src/index.html",
         "main": "apps/user-management/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [
+          "zone.js"
+        ],
         "tsConfig": "apps/user-management/tsconfig.app.json",
-        "assets": ["apps/user-management/src/favicon.ico", "apps/user-management/src/assets"],
-        "styles": ["apps/user-management/src/styles.css"],
+        "assets": [
+          "apps/user-management/src/favicon.ico",
+          "apps/user-management/src/assets"
+        ],
+        "styles": [
+          "apps/user-management/src/styles.css"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -50,10 +62,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "user-management:build:production"
+          "buildTarget": "user-management:build:production"
         },
         "development": {
-          "browserTarget": "user-management:build:development"
+          "buildTarget": "user-management:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -66,14 +78,21 @@
     },
     "lint": {
       "executor": "@nx/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["apps/user-management/**/*.ts", "apps/user-management/**/*.html"]
+        "lintFilePatterns": [
+          "apps/user-management/**/*.ts",
+          "apps/user-management/**/*.html"
+        ]
       }
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
       "options": {
         "jestConfig": "apps/user-management/jest.config.ts",
         "passWithNoTests": true

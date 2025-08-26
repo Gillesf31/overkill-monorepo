@@ -1,7 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UserType } from '@overkill-monorepo/user-management/util';
-import { HttpClientModule } from '@angular/common/http';
 import { UserManagementTableComponent } from '@overkill-monorepo/user-management/ui';
 import { Store } from '@ngxs/store';
 import { SharedJokeFeatureComponent } from '@overkill-monorepo/shared/joke/feature';
@@ -10,7 +9,7 @@ import { UserManagementFacade } from '@overkill-monorepo/user-management/state';
 @Component({
   selector: 'overkill-monorepo-user-management-feature',
   standalone: true,
-  imports: [CommonModule, HttpClientModule, UserManagementTableComponent, SharedJokeFeatureComponent],
+  imports: [CommonModule, UserManagementTableComponent, SharedJokeFeatureComponent],
   providers: [Store],
   templateUrl: './user-management-feature.component.html',
 })

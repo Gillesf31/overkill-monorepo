@@ -1,0 +1,1361 @@
+{
+  "version": "6.0",
+  "nxVersion": "21.4.1",
+  "pathMappings": {
+    "@overkill-monorepo/shared/joke/data-access": [
+      "libs/shared/joke/data-access/src/index.ts"
+    ],
+    "@overkill-monorepo/shared/joke/feature": [
+      "libs/shared/joke/feature/src/index.ts"
+    ],
+    "@overkill-monorepo/shared/joke/ui": [
+      "libs/shared/joke/ui/src/index.ts"
+    ],
+    "@overkill-monorepo/shared/ui-components": [
+      "libs/shared/ui-components/src/index.ts"
+    ],
+    "@overkill-monorepo/todo-list/homepage/feature": [
+      "libs/todo-list/homepage/feature/src/index.ts"
+    ],
+    "@overkill-monorepo/todo-list/homepage/shell": [
+      "libs/todo-list/homepage/shell/src/index.ts"
+    ],
+    "@overkill-monorepo/todo-list/state": [
+      "libs/todo-list/state/src/index.ts"
+    ],
+    "@overkill-monorepo/todo-list/todo-list-page/data-access": [
+      "libs/todo-list/todo-list-page/data-access/src/index.ts"
+    ],
+    "@overkill-monorepo/todo-list/todo-list-page/feature": [
+      "libs/todo-list/todo-list-page/feature/src/index.ts"
+    ],
+    "@overkill-monorepo/todo-list/todo-list-page/shell": [
+      "libs/todo-list/todo-list-page/shell/src/index.ts"
+    ],
+    "@overkill-monorepo/todo-list/todo-list-page/ui": [
+      "libs/todo-list/todo-list-page/ui/src/index.ts"
+    ],
+    "@overkill-monorepo/todo-list/todo-list-page/util": [
+      "libs/todo-list/todo-list-page/util/src/index.ts"
+    ],
+    "@overkill-monorepo/user-management/data-access": [
+      "libs/user-management/data-access/src/index.ts"
+    ],
+    "@overkill-monorepo/user-management/feature": [
+      "libs/user-management/feature/src/index.ts"
+    ],
+    "@overkill-monorepo/user-management/shell": [
+      "libs/user-management/shell/src/index.ts"
+    ],
+    "@overkill-monorepo/user-management/state": [
+      "libs/user-management/state/src/index.ts"
+    ],
+    "@overkill-monorepo/user-management/ui": [
+      "libs/user-management/ui/src/index.ts"
+    ],
+    "@overkill-monorepo/user-management/util": [
+      "libs/user-management/util/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".cursor/mcp.json",
+        "hash": "5189851285578758734"
+      },
+      {
+        "file": ".cursor/rules/nx-rules.mdc",
+        "hash": "3755722005991428764"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": "tools/tsconfig.tools.json",
+        "hash": "16088922570277978783"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "7848693104264504795"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "12405467205121838013"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "2178144051909739023"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "14508186345144762684"
+      },
+      {
+        "file": "apps/backend-user-management/db.json",
+        "hash": "12508816693892214623"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "1219368869641091749"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "5033320514476299162"
+      },
+      {
+        "file": "nx.json",
+        "hash": "10948294836700439098"
+      },
+      {
+        "file": "libs/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "12333515226966617182"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "1901506875795228750"
+      },
+      {
+        "file": "apps/back-end-todo-list/db.json",
+        "hash": "9655230125352144742"
+      },
+      {
+        "file": "apps/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "README.md",
+        "hash": "12731136045813871458"
+      },
+      {
+        "file": "package.json",
+        "hash": "11916224012419108561"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "235626400633494639"
+      }
+    ],
+    "projectFileMap": {
+      "todo-list-homepage-feature": [
+        {
+          "file": "libs/todo-list/homepage/feature/.eslintrc.json",
+          "hash": "16513820907456873635"
+        },
+        {
+          "file": "libs/todo-list/homepage/feature/README.md",
+          "hash": "6005932176818743127"
+        },
+        {
+          "file": "libs/todo-list/homepage/feature/jest.config.ts",
+          "hash": "9828999698042309543"
+        },
+        {
+          "file": "libs/todo-list/homepage/feature/project.json",
+          "hash": "14747971227715768420"
+        },
+        {
+          "file": "libs/todo-list/homepage/feature/src/index.ts",
+          "hash": "16745657064448474240"
+        },
+        {
+          "file": "libs/todo-list/homepage/feature/src/lib/todo-list-homepage-feature/todo-list-homepage-feature.component.html",
+          "hash": "11534220594853212281"
+        },
+        {
+          "file": "libs/todo-list/homepage/feature/src/lib/todo-list-homepage-feature/todo-list-homepage-feature.component.ts",
+          "hash": "2385767657391190502",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "shared-ui-components",
+            "npm:@angular/router",
+            "shared-joke-feature"
+          ]
+        },
+        {
+          "file": "libs/todo-list/homepage/feature/src/test-setup.ts",
+          "hash": "17711435995618823417",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/todo-list/homepage/feature/tsconfig.json",
+          "hash": "16248533471678702062"
+        },
+        {
+          "file": "libs/todo-list/homepage/feature/tsconfig.lib.json",
+          "hash": "9957646254653392655"
+        },
+        {
+          "file": "libs/todo-list/homepage/feature/tsconfig.spec.json",
+          "hash": "13144727132898993533"
+        }
+      ],
+      "todo-list-todo-list-page-data-access": [
+        {
+          "file": "libs/todo-list/todo-list-page/data-access/.eslintrc.json",
+          "hash": "16513820907456873635"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/data-access/README.md",
+          "hash": "2288239433732260565"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/data-access/jest.config.ts",
+          "hash": "3377646599769236503"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/data-access/project.json",
+          "hash": "16618030613438109374"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/data-access/src/index.ts",
+          "hash": "9355841325725558920"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/data-access/src/lib/todo-list-page-data-access.service.ts",
+          "hash": "6782204367955829522",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs",
+            "todo-list-todo-list-page-util"
+          ]
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/data-access/src/test-setup.ts",
+          "hash": "17711435995618823417",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/data-access/tsconfig.json",
+          "hash": "16248533471678702062"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/data-access/tsconfig.lib.json",
+          "hash": "9957646254653392655"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/data-access/tsconfig.spec.json",
+          "hash": "13144727132898993533"
+        }
+      ],
+      "shared-joke-ui": [
+        {
+          "file": "libs/shared/joke/ui/.eslintrc.json",
+          "hash": "16513820907456873635"
+        },
+        {
+          "file": "libs/shared/joke/ui/README.md",
+          "hash": "1486414741397956580"
+        },
+        {
+          "file": "libs/shared/joke/ui/jest.config.ts",
+          "hash": "1057688996509630614"
+        },
+        {
+          "file": "libs/shared/joke/ui/project.json",
+          "hash": "6476764665397822013"
+        },
+        {
+          "file": "libs/shared/joke/ui/src/index.ts",
+          "hash": "16219857272395276217"
+        },
+        {
+          "file": "libs/shared/joke/ui/src/lib/shared-joke-ui/shared-joke-ui.component.html",
+          "hash": "14051585572725543674"
+        },
+        {
+          "file": "libs/shared/joke/ui/src/lib/shared-joke-ui/shared-joke-ui.component.ts",
+          "hash": "13120742797487817251",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "libs/shared/joke/ui/src/test-setup.ts",
+          "hash": "17711435995618823417",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/shared/joke/ui/tsconfig.json",
+          "hash": "16248533471678702062"
+        },
+        {
+          "file": "libs/shared/joke/ui/tsconfig.lib.json",
+          "hash": "9957646254653392655"
+        },
+        {
+          "file": "libs/shared/joke/ui/tsconfig.spec.json",
+          "hash": "13144727132898993533"
+        }
+      ],
+      "shared-ui-components": [
+        {
+          "file": "libs/shared/ui-components/.eslintrc.json",
+          "hash": "10359291670607399902"
+        },
+        {
+          "file": "libs/shared/ui-components/README.md",
+          "hash": "14685048361883570244"
+        },
+        {
+          "file": "libs/shared/ui-components/jest.config.ts",
+          "hash": "9992068406192480569"
+        },
+        {
+          "file": "libs/shared/ui-components/project.json",
+          "hash": "7113609389014769247"
+        },
+        {
+          "file": "libs/shared/ui-components/src/index.ts",
+          "hash": "7471884860391420950"
+        },
+        {
+          "file": "libs/shared/ui-components/src/lib/button/button.component.html",
+          "hash": "10610397301405830309"
+        },
+        {
+          "file": "libs/shared/ui-components/src/lib/button/button.component.ts",
+          "hash": "11662520875940308054",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "libs/shared/ui-components/src/lib/input-group/input-group.component.html",
+          "hash": "14459627177865319183"
+        },
+        {
+          "file": "libs/shared/ui-components/src/lib/input-group/input-group.component.ts",
+          "hash": "10924540916215845782",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "libs/shared/ui-components/src/test-setup.ts",
+          "hash": "17711435995618823417",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/shared/ui-components/tsconfig.json",
+          "hash": "8526453262384300416"
+        },
+        {
+          "file": "libs/shared/ui-components/tsconfig.lib.json",
+          "hash": "15320869708364835784"
+        },
+        {
+          "file": "libs/shared/ui-components/tsconfig.spec.json",
+          "hash": "17159144152117924454"
+        }
+      ],
+      "todo-list-todo-list-page-ui": [
+        {
+          "file": "libs/todo-list/todo-list-page/ui/.eslintrc.json",
+          "hash": "16513820907456873635"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/ui/README.md",
+          "hash": "14891215574256593271"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/ui/jest.config.ts",
+          "hash": "6100650564423849986"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/ui/project.json",
+          "hash": "15587703288794744348"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/ui/src/index.ts",
+          "hash": "15764438157638455872"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/ui/src/lib/todo-item/todo-item.component.html",
+          "hash": "6275861092758105674"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/ui/src/lib/todo-item/todo-item.component.ts",
+          "hash": "16402296676298230998",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "todo-list-todo-list-page-util",
+            "shared-ui-components"
+          ]
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/ui/src/test-setup.ts",
+          "hash": "17711435995618823417",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/ui/tsconfig.json",
+          "hash": "16248533471678702062"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/ui/tsconfig.lib.json",
+          "hash": "9957646254653392655"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/ui/tsconfig.spec.json",
+          "hash": "13144727132898993533"
+        }
+      ],
+      "user-management": [
+        {
+          "file": "apps/user-management/.eslintrc.json",
+          "hash": "17419739979259639734"
+        },
+        {
+          "file": "apps/user-management/jest.config.ts",
+          "hash": "16783512402344635033"
+        },
+        {
+          "file": "apps/user-management/project.json",
+          "hash": "6420643555731575212"
+        },
+        {
+          "file": "apps/user-management/src/app/app.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/user-management/src/app/app.component.html",
+          "hash": "17816966185630879015"
+        },
+        {
+          "file": "apps/user-management/src/app/app.component.ts",
+          "hash": "3906417973480891070",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/user-management/src/app/app.config.ts",
+          "hash": "3060754413374654130",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "user-management-shell",
+            "npm:@ngxs/store",
+            "npm:@ngxs/devtools-plugin"
+          ]
+        },
+        {
+          "file": "apps/user-management/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/user-management/src/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/user-management/src/index.html",
+          "hash": "2993173086573022317"
+        },
+        {
+          "file": "apps/user-management/src/main.ts",
+          "hash": "8060102740304671444",
+          "deps": [
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "apps/user-management/src/styles.css",
+          "hash": "17788899824995975898"
+        },
+        {
+          "file": "apps/user-management/src/test-setup.ts",
+          "hash": "17711435995618823417",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "apps/user-management/tailwind.config.js",
+          "hash": "12316149224783481988",
+          "deps": [
+            "npm:@nx/angular",
+            "npm:@tailwindcss/typography",
+            "npm:daisyui"
+          ]
+        },
+        {
+          "file": "apps/user-management/tsconfig.app.json",
+          "hash": "8365644956319658761"
+        },
+        {
+          "file": "apps/user-management/tsconfig.editor.json",
+          "hash": "17511610827034788226"
+        },
+        {
+          "file": "apps/user-management/tsconfig.json",
+          "hash": "12094030803572703611"
+        },
+        {
+          "file": "apps/user-management/tsconfig.spec.json",
+          "hash": "2628739785099261941"
+        }
+      ],
+      "todo-list-todo-list-page-shell": [
+        {
+          "file": "libs/todo-list/todo-list-page/shell/.eslintrc.json",
+          "hash": "16513820907456873635"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/shell/README.md",
+          "hash": "11014268618756454435"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/shell/jest.config.ts",
+          "hash": "3798355148147165157"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/shell/project.json",
+          "hash": "17600301127927837220"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/shell/src/index.ts",
+          "hash": "2706766532629189926"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/shell/src/lib/todo-list-todo-list-page-feature-shell/todo-list-todo-list-page-feature-shell.routes.ts",
+          "hash": "4125822107542555239",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@ngxs/store",
+            "todo-list-state",
+            "todo-list-todo-list-page-data-access",
+            [
+              "todo-list-todo-list-page-feature",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/shell/src/test-setup.ts",
+          "hash": "17711435995618823417",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/shell/tsconfig.json",
+          "hash": "16248533471678702062"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/shell/tsconfig.lib.json",
+          "hash": "9957646254653392655"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/shell/tsconfig.spec.json",
+          "hash": "13144727132898993533"
+        }
+      ],
+      "todo-list-todo-list-page-feature": [
+        {
+          "file": "libs/todo-list/todo-list-page/feature/.eslintrc.json",
+          "hash": "16513820907456873635"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/feature/README.md",
+          "hash": "16955553818297459232"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/feature/jest.config.ts",
+          "hash": "10974353274665574546"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/feature/project.json",
+          "hash": "12806824882583717933"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/feature/src/index.ts",
+          "hash": "15516482694219035872"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/feature/src/lib/todo-list-todo-list-page-feature/todo-list-todo-list-page-feature.component.html",
+          "hash": "8640775501097946590"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/feature/src/lib/todo-list-todo-list-page-feature/todo-list-todo-list-page-feature.component.ts",
+          "hash": "10666771115364147127",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@ngxs/store",
+            "shared-ui-components",
+            "todo-list-state",
+            "todo-list-todo-list-page-ui",
+            "todo-list-todo-list-page-util"
+          ]
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/feature/src/test-setup.ts",
+          "hash": "17711435995618823417",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/feature/tsconfig.json",
+          "hash": "16248533471678702062"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/feature/tsconfig.lib.json",
+          "hash": "9957646254653392655"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/feature/tsconfig.spec.json",
+          "hash": "13144727132898993533"
+        }
+      ],
+      "todo-list-homepage-shell": [
+        {
+          "file": "libs/todo-list/homepage/shell/.eslintrc.json",
+          "hash": "16513820907456873635"
+        },
+        {
+          "file": "libs/todo-list/homepage/shell/README.md",
+          "hash": "3878782378918085301"
+        },
+        {
+          "file": "libs/todo-list/homepage/shell/jest.config.ts",
+          "hash": "2131108869203910957"
+        },
+        {
+          "file": "libs/todo-list/homepage/shell/project.json",
+          "hash": "6336965833136484104"
+        },
+        {
+          "file": "libs/todo-list/homepage/shell/src/index.ts",
+          "hash": "14764515854938483140"
+        },
+        {
+          "file": "libs/todo-list/homepage/shell/src/lib/todo-list-homepage-feature-shell/todo-list-homepage-feature-shell.routes.ts",
+          "hash": "14845985039491070255",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/router",
+            [
+              "todo-list-homepage-feature",
+              "dynamic"
+            ],
+            [
+              "todo-list-todo-list-page-shell",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "libs/todo-list/homepage/shell/src/test-setup.ts",
+          "hash": "17711435995618823417",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/todo-list/homepage/shell/tsconfig.json",
+          "hash": "16248533471678702062"
+        },
+        {
+          "file": "libs/todo-list/homepage/shell/tsconfig.lib.json",
+          "hash": "9957646254653392655"
+        },
+        {
+          "file": "libs/todo-list/homepage/shell/tsconfig.spec.json",
+          "hash": "13144727132898993533"
+        }
+      ],
+      "shared-joke-data-access": [
+        {
+          "file": "libs/shared/joke/data-access/.eslintrc.json",
+          "hash": "16513820907456873635"
+        },
+        {
+          "file": "libs/shared/joke/data-access/README.md",
+          "hash": "8337229805166702250"
+        },
+        {
+          "file": "libs/shared/joke/data-access/jest.config.ts",
+          "hash": "10589116827316964785"
+        },
+        {
+          "file": "libs/shared/joke/data-access/project.json",
+          "hash": "7288750869643810444"
+        },
+        {
+          "file": "libs/shared/joke/data-access/src/index.ts",
+          "hash": "9431271298926185575"
+        },
+        {
+          "file": "libs/shared/joke/data-access/src/lib/joke.service.ts",
+          "hash": "18076017770217329204",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/shared/joke/data-access/src/lib/models/joke.type.ts",
+          "hash": "12221930487988957288"
+        },
+        {
+          "file": "libs/shared/joke/data-access/src/test-setup.ts",
+          "hash": "17711435995618823417",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/shared/joke/data-access/tsconfig.json",
+          "hash": "16248533471678702062"
+        },
+        {
+          "file": "libs/shared/joke/data-access/tsconfig.lib.json",
+          "hash": "9957646254653392655"
+        },
+        {
+          "file": "libs/shared/joke/data-access/tsconfig.spec.json",
+          "hash": "13144727132898993533"
+        }
+      ],
+      "todo-list-state": [
+        {
+          "file": "libs/todo-list/state/.eslintrc.json",
+          "hash": "10359291670607399902"
+        },
+        {
+          "file": "libs/todo-list/state/README.md",
+          "hash": "5491729120047494302"
+        },
+        {
+          "file": "libs/todo-list/state/jest.config.ts",
+          "hash": "10551841321749474123"
+        },
+        {
+          "file": "libs/todo-list/state/project.json",
+          "hash": "17099454870878868898"
+        },
+        {
+          "file": "libs/todo-list/state/src/index.ts",
+          "hash": "16606596863235611338"
+        },
+        {
+          "file": "libs/todo-list/state/src/lib/todo-list-page.action.ts",
+          "hash": "1616618590101610118",
+          "deps": [
+            "todo-list-todo-list-page-util"
+          ]
+        },
+        {
+          "file": "libs/todo-list/state/src/lib/todo-list-page.facade.ts",
+          "hash": "16854175855931730219",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@ngxs/store",
+            "npm:rxjs",
+            "todo-list-todo-list-page-util"
+          ]
+        },
+        {
+          "file": "libs/todo-list/state/src/lib/todo-list-page.state.ts",
+          "hash": "46762282843965792",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@ngxs/store",
+            "todo-list-todo-list-page-util",
+            "npm:rxjs",
+            "todo-list-todo-list-page-data-access"
+          ]
+        },
+        {
+          "file": "libs/todo-list/state/src/test-setup.ts",
+          "hash": "17711435995618823417",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/todo-list/state/tsconfig.json",
+          "hash": "8526453262384300416"
+        },
+        {
+          "file": "libs/todo-list/state/tsconfig.lib.json",
+          "hash": "15320869708364835784"
+        },
+        {
+          "file": "libs/todo-list/state/tsconfig.spec.json",
+          "hash": "17159144152117924454"
+        }
+      ],
+      "user-management-state": [
+        {
+          "file": "libs/user-management/state/.eslintrc.json",
+          "hash": "10359291670607399902"
+        },
+        {
+          "file": "libs/user-management/state/README.md",
+          "hash": "8822571535418358072"
+        },
+        {
+          "file": "libs/user-management/state/jest.config.ts",
+          "hash": "3336078192420713317"
+        },
+        {
+          "file": "libs/user-management/state/project.json",
+          "hash": "650790218023225546"
+        },
+        {
+          "file": "libs/user-management/state/src/index.ts",
+          "hash": "8981249432761495198"
+        },
+        {
+          "file": "libs/user-management/state/src/lib/user-management.action.ts",
+          "hash": "3153236132376502739"
+        },
+        {
+          "file": "libs/user-management/state/src/lib/user-management.facade.ts",
+          "hash": "1294795654407044637",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@ngxs/store",
+            "npm:rxjs",
+            "user-management-util"
+          ]
+        },
+        {
+          "file": "libs/user-management/state/src/lib/user-management.state.ts",
+          "hash": "7725914225540585436",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@ngxs/store",
+            "npm:rxjs",
+            "user-management-util",
+            "user-management-data-access"
+          ]
+        },
+        {
+          "file": "libs/user-management/state/src/test-setup.ts",
+          "hash": "17711435995618823417",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/user-management/state/tsconfig.json",
+          "hash": "8526453262384300416"
+        },
+        {
+          "file": "libs/user-management/state/tsconfig.lib.json",
+          "hash": "15320869708364835784"
+        },
+        {
+          "file": "libs/user-management/state/tsconfig.spec.json",
+          "hash": "17159144152117924454"
+        }
+      ],
+      "shared-joke-feature": [
+        {
+          "file": "libs/shared/joke/feature/.eslintrc.json",
+          "hash": "16513820907456873635"
+        },
+        {
+          "file": "libs/shared/joke/feature/README.md",
+          "hash": "2920632456424680786"
+        },
+        {
+          "file": "libs/shared/joke/feature/jest.config.ts",
+          "hash": "18236453762613148584"
+        },
+        {
+          "file": "libs/shared/joke/feature/project.json",
+          "hash": "11008573584465218970"
+        },
+        {
+          "file": "libs/shared/joke/feature/src/index.ts",
+          "hash": "8385096052657864775"
+        },
+        {
+          "file": "libs/shared/joke/feature/src/lib/shared-joke-feature/shared-joke-feature.component.html",
+          "hash": "9421990552945523575"
+        },
+        {
+          "file": "libs/shared/joke/feature/src/lib/shared-joke-feature/shared-joke-feature.component.ts",
+          "hash": "9201426019521344451",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "shared-joke-ui",
+            "npm:rxjs",
+            "shared-joke-data-access"
+          ]
+        },
+        {
+          "file": "libs/shared/joke/feature/src/test-setup.ts",
+          "hash": "17711435995618823417",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/shared/joke/feature/tsconfig.json",
+          "hash": "16248533471678702062"
+        },
+        {
+          "file": "libs/shared/joke/feature/tsconfig.lib.json",
+          "hash": "9957646254653392655"
+        },
+        {
+          "file": "libs/shared/joke/feature/tsconfig.spec.json",
+          "hash": "13144727132898993533"
+        }
+      ],
+      "user-management-shell": [
+        {
+          "file": "libs/user-management/shell/.eslintrc.json",
+          "hash": "10359291670607399902"
+        },
+        {
+          "file": "libs/user-management/shell/README.md",
+          "hash": "2047250754552217392"
+        },
+        {
+          "file": "libs/user-management/shell/jest.config.ts",
+          "hash": "4907399594496316157"
+        },
+        {
+          "file": "libs/user-management/shell/project.json",
+          "hash": "10450141422036189932"
+        },
+        {
+          "file": "libs/user-management/shell/src/index.ts",
+          "hash": "11614634130149001252"
+        },
+        {
+          "file": "libs/user-management/shell/src/lib/user-management-feature-shell/user-management-feature-shell.routes.ts",
+          "hash": "8444161277683092135",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@ngxs/store",
+            "user-management-data-access",
+            "user-management-state",
+            [
+              "user-management-feature",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "libs/user-management/shell/src/test-setup.ts",
+          "hash": "17711435995618823417",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/user-management/shell/tsconfig.json",
+          "hash": "8526453262384300416"
+        },
+        {
+          "file": "libs/user-management/shell/tsconfig.lib.json",
+          "hash": "15320869708364835784"
+        },
+        {
+          "file": "libs/user-management/shell/tsconfig.spec.json",
+          "hash": "17159144152117924454"
+        }
+      ],
+      "user-management-ui": [
+        {
+          "file": "libs/user-management/ui/.eslintrc.json",
+          "hash": "10359291670607399902"
+        },
+        {
+          "file": "libs/user-management/ui/README.md",
+          "hash": "4307521321757777892"
+        },
+        {
+          "file": "libs/user-management/ui/jest.config.ts",
+          "hash": "16728809135470326062"
+        },
+        {
+          "file": "libs/user-management/ui/project.json",
+          "hash": "9320561587935881832"
+        },
+        {
+          "file": "libs/user-management/ui/src/index.ts",
+          "hash": "7002639573697221897"
+        },
+        {
+          "file": "libs/user-management/ui/src/lib/user-management-table/user-management-table.component.html",
+          "hash": "755840122797984074"
+        },
+        {
+          "file": "libs/user-management/ui/src/lib/user-management-table/user-management-table.component.ts",
+          "hash": "17171035684470307866",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "user-management-util",
+            "shared-ui-components"
+          ]
+        },
+        {
+          "file": "libs/user-management/ui/src/test-setup.ts",
+          "hash": "17711435995618823417",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/user-management/ui/tsconfig.json",
+          "hash": "8526453262384300416"
+        },
+        {
+          "file": "libs/user-management/ui/tsconfig.lib.json",
+          "hash": "15320869708364835784"
+        },
+        {
+          "file": "libs/user-management/ui/tsconfig.spec.json",
+          "hash": "17159144152117924454"
+        }
+      ],
+      "user-management-data-access": [
+        {
+          "file": "libs/user-management/data-access/.eslintrc.json",
+          "hash": "10359291670607399902"
+        },
+        {
+          "file": "libs/user-management/data-access/README.md",
+          "hash": "13604750631001250130"
+        },
+        {
+          "file": "libs/user-management/data-access/jest.config.ts",
+          "hash": "809309878594965145"
+        },
+        {
+          "file": "libs/user-management/data-access/project.json",
+          "hash": "5144398949485178954"
+        },
+        {
+          "file": "libs/user-management/data-access/src/index.ts",
+          "hash": "15183302181287070092"
+        },
+        {
+          "file": "libs/user-management/data-access/src/lib/user-management.service.ts",
+          "hash": "17867475664207035208",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs",
+            "user-management-util"
+          ]
+        },
+        {
+          "file": "libs/user-management/data-access/src/test-setup.ts",
+          "hash": "17711435995618823417",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/user-management/data-access/tsconfig.json",
+          "hash": "8526453262384300416"
+        },
+        {
+          "file": "libs/user-management/data-access/tsconfig.lib.json",
+          "hash": "15320869708364835784"
+        },
+        {
+          "file": "libs/user-management/data-access/tsconfig.spec.json",
+          "hash": "17159144152117924454"
+        }
+      ],
+      "user-management-feature": [
+        {
+          "file": "libs/user-management/feature/.eslintrc.json",
+          "hash": "10359291670607399902"
+        },
+        {
+          "file": "libs/user-management/feature/README.md",
+          "hash": "5412637487332724814"
+        },
+        {
+          "file": "libs/user-management/feature/jest.config.ts",
+          "hash": "8859922023857095602"
+        },
+        {
+          "file": "libs/user-management/feature/project.json",
+          "hash": "13469126565031090863"
+        },
+        {
+          "file": "libs/user-management/feature/src/index.ts",
+          "hash": "12498435266093339170"
+        },
+        {
+          "file": "libs/user-management/feature/src/lib/user-management-feature/user-management-feature.component.html",
+          "hash": "14877941053626358527"
+        },
+        {
+          "file": "libs/user-management/feature/src/lib/user-management-feature/user-management-feature.component.ts",
+          "hash": "2890275239881018229",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "user-management-util",
+            "user-management-ui",
+            "npm:@ngxs/store",
+            "shared-joke-feature",
+            "user-management-state"
+          ]
+        },
+        {
+          "file": "libs/user-management/feature/src/test-setup.ts",
+          "hash": "17711435995618823417",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/user-management/feature/tsconfig.json",
+          "hash": "8526453262384300416"
+        },
+        {
+          "file": "libs/user-management/feature/tsconfig.lib.json",
+          "hash": "15320869708364835784"
+        },
+        {
+          "file": "libs/user-management/feature/tsconfig.spec.json",
+          "hash": "17159144152117924454"
+        }
+      ],
+      "todo-list": [
+        {
+          "file": "apps/todo-list/.eslintrc.json",
+          "hash": "1095300187907216165"
+        },
+        {
+          "file": "apps/todo-list/jest.config.ts",
+          "hash": "7702012839631523891"
+        },
+        {
+          "file": "apps/todo-list/project.json",
+          "hash": "2269265084893499789"
+        },
+        {
+          "file": "apps/todo-list/src/app/app.component.html",
+          "hash": "13120532160603347150"
+        },
+        {
+          "file": "apps/todo-list/src/app/app.component.ts",
+          "hash": "715599652171439522",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/todo-list/src/app/app.config.ts",
+          "hash": "1567886954543463582",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@ngxs/devtools-plugin",
+            "npm:@ngxs/store"
+          ]
+        },
+        {
+          "file": "apps/todo-list/src/app/app.routes.ts",
+          "hash": "5698567477445145353",
+          "deps": [
+            "npm:@angular/router",
+            [
+              "todo-list-homepage-shell",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "apps/todo-list/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/todo-list/src/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/todo-list/src/index.html",
+          "hash": "17062425170280063675"
+        },
+        {
+          "file": "apps/todo-list/src/main.ts",
+          "hash": "16635586463787978962",
+          "deps": [
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "apps/todo-list/src/styles.css",
+          "hash": "17788899824995975898"
+        },
+        {
+          "file": "apps/todo-list/src/test-setup.ts",
+          "hash": "17711435995618823417",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "apps/todo-list/tailwind.config.js",
+          "hash": "12316149224783481988",
+          "deps": [
+            "npm:@nx/angular",
+            "npm:@tailwindcss/typography",
+            "npm:daisyui"
+          ]
+        },
+        {
+          "file": "apps/todo-list/tsconfig.app.json",
+          "hash": "8365644956319658761"
+        },
+        {
+          "file": "apps/todo-list/tsconfig.editor.json",
+          "hash": "17511610827034788226"
+        },
+        {
+          "file": "apps/todo-list/tsconfig.json",
+          "hash": "12094030803572703611"
+        },
+        {
+          "file": "apps/todo-list/tsconfig.spec.json",
+          "hash": "2927375835638640771"
+        }
+      ],
+      "todo-list-todo-list-page-util": [
+        {
+          "file": "libs/todo-list/todo-list-page/util/.eslintrc.json",
+          "hash": "16513820907456873635"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/util/README.md",
+          "hash": "7493324170567905070"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/util/jest.config.ts",
+          "hash": "17964206699298196532"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/util/project.json",
+          "hash": "6305956203134653736"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/util/src/index.ts",
+          "hash": "11789925292731242229"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/util/src/lib/models/todo-item.type.ts",
+          "hash": "10905435259084028393"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/util/src/test-setup.ts",
+          "hash": "17711435995618823417",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/util/tsconfig.json",
+          "hash": "16248533471678702062"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/util/tsconfig.lib.json",
+          "hash": "9957646254653392655"
+        },
+        {
+          "file": "libs/todo-list/todo-list-page/util/tsconfig.spec.json",
+          "hash": "13144727132898993533"
+        }
+      ],
+      "user-management-util": [
+        {
+          "file": "libs/user-management/util/.eslintrc.json",
+          "hash": "10359291670607399902"
+        },
+        {
+          "file": "libs/user-management/util/README.md",
+          "hash": "15349064697803307521"
+        },
+        {
+          "file": "libs/user-management/util/jest.config.ts",
+          "hash": "15828536409839065121"
+        },
+        {
+          "file": "libs/user-management/util/project.json",
+          "hash": "11319461415750266020"
+        },
+        {
+          "file": "libs/user-management/util/src/index.ts",
+          "hash": "1913705083600439837"
+        },
+        {
+          "file": "libs/user-management/util/src/lib/models/user.type.ts",
+          "hash": "307908787715901848"
+        },
+        {
+          "file": "libs/user-management/util/src/test-setup.ts",
+          "hash": "17711435995618823417",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/user-management/util/tsconfig.json",
+          "hash": "8526453262384300416"
+        },
+        {
+          "file": "libs/user-management/util/tsconfig.lib.json",
+          "hash": "15320869708364835784"
+        },
+        {
+          "file": "libs/user-management/util/tsconfig.spec.json",
+          "hash": "17159144152117924454"
+        }
+      ]
+    }
+  }
+}
