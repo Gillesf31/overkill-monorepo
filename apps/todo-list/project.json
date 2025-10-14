@@ -18,9 +18,7 @@
         "outputPath": "dist/apps/todo-list",
         "index": "apps/todo-list/src/index.html",
         "main": "apps/todo-list/src/main.ts",
-        "polyfills": [
-          "zone.js"
-        ],
+        "polyfills": [],
         "tsConfig": "apps/todo-list/tsconfig.app.json",
         "assets": [
           "apps/todo-list/src/favicon.ico",

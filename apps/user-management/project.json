@@ -18,9 +18,7 @@
         "outputPath": "dist/apps/user-management",
         "index": "apps/user-management/src/index.html",
         "main": "apps/user-management/src/main.ts",
-        "polyfills": [
-          "zone.js"
-        ],
+        "polyfills": [],
         "tsConfig": "apps/user-management/tsconfig.app.json",
         "assets": [
           "apps/user-management/src/favicon.ico",

@@ -2,18 +2,13 @@
   "todo-list": [
     {
       "id": 1,
-      "title": "",
-      "completed": false
+      "title": "Angular",
+      "completed": true
     },
     {
       "id": 2,
-      "title": "",
+      "title": "React",
       "completed": false
-    },
-    {
-      "id": 3,
-      "title": "dwqdwqd",
-      "completed": true
     }
   ]
 }
