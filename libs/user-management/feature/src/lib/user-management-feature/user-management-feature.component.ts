@@ -3,7 +3,7 @@ import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/cor
 import { toSignal } from '@angular/core/rxjs-interop';
 import { Store } from '@ngxs/store';
 import { SharedJokeFeatureComponent } from '@overkill-monorepo/shared/joke/feature';
-import { UserManagementFacade } from '@overkill-monorepo/user-management/state';
+import { UserManagementFacade } from '@overkill-monorepo/user-management/facade';
 import { UserManagementTableComponent } from '@overkill-monorepo/user-management/ui';
 import { UserType } from '@overkill-monorepo/user-management/util';
 

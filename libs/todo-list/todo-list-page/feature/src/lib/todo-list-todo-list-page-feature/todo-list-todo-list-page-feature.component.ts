@@ -3,7 +3,7 @@ import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/cor
 import { toSignal } from '@angular/core/rxjs-interop';
 import { Store } from '@ngxs/store';
 import { InputGroupComponent } from '@overkill-monorepo/shared/ui-components';
-import { TodoListFacade } from '@overkill-monorepo/todo-list/state';
+import { TodoListFacade } from '@overkill-monorepo/todo-list/facade';
 import { TodoItemComponent } from '@overkill-monorepo/todo-list/todo-list-page/ui';
 import { TodoItemType } from '@overkill-monorepo/todo-list/todo-list-page/util';
 

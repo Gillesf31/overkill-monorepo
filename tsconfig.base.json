@@ -22,7 +22,8 @@
       "@overkill-monorepo/todo-list/homepage/feature": ["libs/todo-list/homepage/feature/src/index.ts"],
       "@overkill-monorepo/todo-list/homepage/shell": ["libs/todo-list/homepage/shell/src/index.ts"],
       "@overkill-monorepo/todo-list/state": ["libs/todo-list/state/src/index.ts"],
-      "@overkill-monorepo/todo-list/todo-list-page/data-access": ["libs/todo-list/todo-list-page/data-access/src/index.ts"],
+      "@overkill-monorepo/todo-list/facade": ["libs/todo-list/facade/src/index.ts"],
+      "@overkill-monorepo/todo-list/data-access": ["libs/todo-list/data-access/src/index.ts"],
       "@overkill-monorepo/todo-list/todo-list-page/feature": ["libs/todo-list/todo-list-page/feature/src/index.ts"],
       "@overkill-monorepo/todo-list/todo-list-page/shell": ["libs/todo-list/todo-list-page/shell/src/index.ts"],
       "@overkill-monorepo/todo-list/todo-list-page/ui": ["libs/todo-list/todo-list-page/ui/src/index.ts"],
@@ -31,8 +32,9 @@
       "@overkill-monorepo/user-management/feature": ["libs/user-management/feature/src/index.ts"],
       "@overkill-monorepo/user-management/shell": ["libs/user-management/shell/src/index.ts"],
       "@overkill-monorepo/user-management/state": ["libs/user-management/state/src/index.ts"],
+      "@overkill-monorepo/user-management/facade": ["libs/user-management/facade/src/index.ts"],
       "@overkill-monorepo/user-management/ui": ["libs/user-management/ui/src/index.ts"],
-      "@overkill-monorepo/user-management/util": ["libs/user-management/util/src/index.ts"]
+      "@overkill-monorepo/user-management/util": ["libs/user-management/util/src/index.ts"],
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,21 +1,16 @@
 {
-  "name": "todo-list-state",
+  "name": "todo-list-data-access",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/todo-list/state/src",
+  "sourceRoot": "libs/todo-list/data-access/src",
   "prefix": "overkill-monorepo",
-  "tags": [
-    "scope:todo-list",
-    "type:state"
-  ],
   "projectType": "library",
+  "tags": ["scope:todo-list", "type:data-access"],
   "targets": {
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": [
-        "{workspaceRoot}/coverage/{projectRoot}"
-      ],
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/todo-list/state/jest.config.ts",
+        "jestConfig": "libs/todo-list/data-access/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -27,14 +22,9 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
+      "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "libs/todo-list/state/**/*.ts",
-          "libs/todo-list/state/**/*.html"
-        ]
+        "lintFilePatterns": ["libs/todo-list/data-access/**/*.ts", "libs/todo-list/data-access/**/*.html"]
       }
     }
   }

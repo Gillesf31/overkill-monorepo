@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'todo-list-todo-list-page-data-access',
-  preset: '../../../../jest.preset.js',
+  displayName: 'user-management-facade',
+  preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../../../coverage/libs/todo-list/todo-list-page/data-access',
+  coverageDirectory: '../../../coverage/libs/user-management/facade',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

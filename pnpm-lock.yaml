@@ -87,6 +87,9 @@ importers:
       '@nx/esbuild':
         specifier: 21.4.1
         version: 21.4.1(@babel/traverse@7.28.3)(esbuild@0.19.9)(nx@21.4.1)
+      '@nx/eslint':
+        specifier: 21.4.1
+        version: 21.4.1(@babel/traverse@7.28.3)(@zkochan/js-yaml@0.0.7)(eslint@8.57.1)(nx@21.4.1)
       '@nx/eslint-plugin':
         specifier: 21.4.1
         version: 21.4.1(@babel/traverse@7.28.3)(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.8.3))(eslint-config-prettier@9.1.2(eslint@8.57.1))(eslint@8.57.1)(nx@21.4.1)(typescript@5.8.3)

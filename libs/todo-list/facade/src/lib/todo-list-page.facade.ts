@@ -1,9 +1,8 @@
 import { inject, Injectable } from '@angular/core';
 import { Select, Store } from '@ngxs/store';
 import { Observable } from 'rxjs';
+import { TodoActions, TodoListState } from '@overkill-monorepo/todo-list/state';
 import { TodoItemType } from '@overkill-monorepo/todo-list/todo-list-page/util';
-import { TodoListState } from './todo-list-page.state';
-import { TodoActions } from './todo-list-page.action';
 
 @Injectable()
 export class TodoListFacade {

@@ -51,15 +51,30 @@
                 "sourceTag": "type:feature",
                 "onlyDependOnLibsWithTags": [
                   "type:feature",
+                  "type:facade",
+                  "type:data-access",
                   "type:ui",
-                  "type:util",
-                  "type:data-access"
+                  "type:util"
                 ]
               },
               {
                 "sourceTag": "type:data-access",
                 "onlyDependOnLibsWithTags": [
                   "type:data-access",
+                  "type:util"
+                ]
+              },
+              {
+                "sourceTag": "type:state",
+                "onlyDependOnLibsWithTags": [
+                  "type:data-access",
+                  "type:util"
+                ]
+              },
+              {
+                "sourceTag": "type:facade",
+                "onlyDependOnLibsWithTags": [
+                  "type:state",
                   "type:util"
                 ]
               },
@@ -81,7 +96,9 @@
                 "onlyDependOnLibsWithTags": [
                   "type:routes",
                   "type:feature",
-                  "type:data-access"
+                  "type:data-access",
+                  "type:state",
+                  "type:facade"
                 ]
               }
             ]

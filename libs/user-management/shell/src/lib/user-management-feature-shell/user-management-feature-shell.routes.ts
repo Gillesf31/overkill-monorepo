@@ -3,7 +3,8 @@ import { importProvidersFrom } from '@angular/core';
 import { Routes } from '@angular/router';
 import { NgxsModule } from '@ngxs/store';
 import { UserManagementService } from '@overkill-monorepo/user-management/data-access';
-import { UserManagementFacade, UserManagementState } from '@overkill-monorepo/user-management/state';
+import { UserManagementFacade } from '@overkill-monorepo/user-management/facade';
+import { UserManagementState } from '@overkill-monorepo/user-management/state';
 
 export const ROUTES: Routes = [
   {

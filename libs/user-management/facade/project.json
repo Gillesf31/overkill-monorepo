@@ -1,11 +1,11 @@
 {
-  "name": "shared-joke-ui",
-  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/shared/joke/ui/src",
+  "name": "user-management-facade",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/user-management/facade/src",
   "prefix": "overkill-monorepo",
   "tags": [
-    "scope:shared",
-    "type:ui"
+    "scope:user-management",
+    "type:facade"
   ],
   "projectType": "library",
   "targets": {
@@ -15,7 +15,7 @@
         "{workspaceRoot}/coverage/{projectRoot}"
       ],
       "options": {
-        "jestConfig": "libs/shared/joke/ui/jest.config.ts",
+        "jestConfig": "libs/user-management/facade/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -32,8 +32,8 @@
       ],
       "options": {
         "lintFilePatterns": [
-          "libs/shared/joke/ui/**/*.ts",
-          "libs/shared/joke/ui/**/*.html"
+          "libs/user-management/facade/**/*.ts",
+          "libs/user-management/facade/**/*.html"
         ]
       }
     }

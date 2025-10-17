@@ -28,7 +28,15 @@ I used NX types and scopes to organize the code. Check `.eslintrc.json` more det
 },
 {
 "sourceTag": "type:feature",
-"onlyDependOnLibsWithTags": ["type:feature", "type:data-access", "type:ui", "type:util"]
+"onlyDependOnLibsWithTags": ["type:feature", "type:facade", "type:data-access", "type:ui", "type:util"]
+},
+{
+"sourceTag": "type:facade",
+"onlyDependOnLibsWithTags": ["type:state"]
+},
+{
+"sourceTag": "type:state",
+"onlyDependOnLibsWithTags": ["type:data-access", "type:util"]
 },
 {
 "sourceTag": "type:data-access",
